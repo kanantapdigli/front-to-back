@@ -48,15 +48,17 @@ namespace front_to_back.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid) return View(teamMember);
 
-            if (!teamMember.Photo.ContentType.Contains("image/"))
+            if (!_fileService.IsImage(teamMember.Photo))
             {
                 ModelState.AddModelError("Photo", "Yüklənən fayl image formatında olmalıdır.");
                 return View(teamMember);
             }
 
-            if (teamMember.Photo.Length / 1024 > 60)
+            int maxSize = 100;
+
+            if (!_fileService.CheckSize(teamMember.Photo, maxSize))
             {
-                ModelState.AddModelError("Photo", "Şəkilin ölçüsü 60 kb-dan böyükdür");
+                ModelState.AddModelError("Photo", $"Şəkilin ölçüsü {maxSize} kb-dan böyükdür");
                 return View(teamMember);
             }
 
@@ -69,6 +71,8 @@ namespace front_to_back.Areas.Admin.Controllers
         }
 
         #endregion
+
+        #region Update
 
         [HttpGet]
         public async Task<IActionResult> Update(int id)
@@ -94,7 +98,7 @@ namespace front_to_back.Areas.Admin.Controllers
             if (!ModelState.IsValid)
             {
                 return View(model);
-            } 
+            }
 
             if (id != model.Id) return BadRequest();
 
@@ -114,6 +118,8 @@ namespace front_to_back.Areas.Admin.Controllers
             await _appDbContext.SaveChangesAsync();
             return RedirectToAction("index");
         }
+
+        #endregion
 
         #region Delete
 

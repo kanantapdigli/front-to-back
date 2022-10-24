@@ -23,5 +23,24 @@
             if (File.Exists(path))
                 File.Delete(path);
         }
+
+        public bool IsImage(IFormFile file)
+        {
+            if (file.ContentType.Contains("image/"))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public bool CheckSize(IFormFile file, int size)
+        {
+            if (file.Length / 1024 > size)
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }

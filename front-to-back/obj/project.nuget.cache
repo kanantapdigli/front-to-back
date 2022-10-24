@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cWpYhVcfdVULelq1JIUDGYOW2KoCh+mIrPDlnV0wFxc6Ye1SZST4YiUEz3Nd7IBWgDvqWz3P35qoLRSgz9B1Gg==",
+  "dgSpecHash": "OVl6fN6mUoUhMFae5YSRODIdRnmMtLv/BuiIqe+MvgK2VU+w0ZwvQwO3+8p8nmryc1L1R12318d+HB7AIdpsTg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kanan\\Desktop\\HomeWork1810\\HomeWork1810\\front-to-back\\front-to-back\\front-to-back.csproj",
+  "projectFilePath": "C:\\Users\\Kanan\\Desktop\\front-to-back\\front-to-back\\front-to-back.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kanan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
