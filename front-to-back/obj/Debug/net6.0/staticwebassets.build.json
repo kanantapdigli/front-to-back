@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Pa9cRja/35hZKb3lTmK+IISr12KY37ZnR36yKv4HTNc=",
+  "Hash": "U60iAjBkdBUkL4oaLXpisqRNttFOjFCz62fIjFvPRLQ=",
   "Source": "front-to-back",
   "BasePath": "_content/front-to-back",
   "Mode": "Default",
@@ -1698,6 +1698,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\boxicons.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\Kanan\\Desktop\\front-to-back\\front-to-back\\wwwroot\\assets\\img\\29e3c1bb-a36c-49d2-a05b-85b07a2db10d_category.jpg",
+      "SourceId": "front-to-back",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kanan\\Desktop\\front-to-back\\front-to-back\\wwwroot\\",
+      "BasePath": "_content/front-to-back",
+      "RelativePath": "assets/img/29e3c1bb-a36c-49d2-a05b-85b07a2db10d_category.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\29e3c1bb-a36c-49d2-a05b-85b07a2db10d_category.jpg"
     },
     {
       "Identity": "C:\\Users\\Kanan\\Desktop\\front-to-back\\front-to-back\\wwwroot\\assets\\img\\59084e52-87a7-47b4-842a-b7ac2bbf5470_team-03.jpg",

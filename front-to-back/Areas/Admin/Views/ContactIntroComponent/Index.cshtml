@@ -6,29 +6,30 @@
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Categories</h4>
+                        <h4 class="card-title">Contract Intro Component</h4>
                         <a class="btn btn-main" asp-action="create" asp-controller="contactintrocomponent" asp-area="admin">CREATE ContactIntro</a>
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Title</th>
-                                        <th>DEscription</th>
-                                        <th>Filepath</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                            <td>@Model.ContractIntroComponent.Id</td>
-                                            <td>@Model.ContractIntroComponent.Title</td>
-                                            <td>@Model.ContractIntroComponent.Description</td>
-                                            <td>@Model.ContractIntroComponent.FilePath</td>
-                                   
+                        @if (Model.ContractIntroComponent != null)
+                        {
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Title</th>
+                                            <th>DEscription</th>
+                                            <th>Filepath</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <td>@Model.ContractIntroComponent.Id</td>
+                                    <td>@Model.ContractIntroComponent.Title</td>
+                                    <td>@Model.ContractIntroComponent.Description</td>
+                                    <td>@Model.ContractIntroComponent.FilePath</td>
+                                    </tbody>
+                                </table>
+                            </div>
 
-
-                                </tbody>
-                            </table>
-                        </div>
+                        }
                     </div>
                 </div>
             </div>
