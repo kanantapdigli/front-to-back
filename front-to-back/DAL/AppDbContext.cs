@@ -1,9 +1,10 @@
 ﻿using front_to_back.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace front_to_back.DAL
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<User>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -16,5 +17,7 @@ namespace front_to_back.DAL
         public DbSet<CategoryComponent> CategoryComponents { get; set; }
         public DbSet<ObjectiveComponent> ObjectiveComponents { get; set; }
         public DbSet<TeamMember> TeamMembers { get; set; }
+        public DbSet<FeaturedWorkComponent> FeatureWorkComponent { get; set; }
+        public DbSet<FeaturedWorkComponentPhoto> FeaturedWorkComponentPhotos { get; set; }
     }
 }

@@ -1,0 +1,36 @@
+﻿@using front_to_back.ViewModels.Account
+@model AccountRegisterViewModel
+
+@{
+    Layout = null;
+}
+
+<form asp-action="register" asp-controller="account">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Fullname"></label>
+        <input asp-for="Fullname" />
+        <span asp-validation-for="Fullname"></span>
+    </div>
+       <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+        <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+        <div class="form-group">
+        <label asp-for="ConfirmPassword"></label>
+        <input asp-for="ConfirmPassword" />
+        <span asp-validation-for="ConfirmPassword"></span>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">Sign up</button>
+    </div>
+    <div>
+        Already have an account? <a asp-action="login" asp-controller="account">Login</a>
+    </div>
+</form>

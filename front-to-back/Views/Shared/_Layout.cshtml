@@ -62,6 +62,15 @@ https://templatemo.com/tm-561-purple-buzz
                     <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
                     <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
                 </div>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div>
+                        <h6>@User.Identity.Name</h6>
+                    </div>
+                    <div>
+                        <a asp-action="logout" asp-controller="account">Logout</a>
+                        </div>
+                }
             </div>
         </div>
     </nav>
